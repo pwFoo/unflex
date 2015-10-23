@@ -1,5 +1,3 @@
-![ungrid logo](../gh-pages/favicon.png "ungrid logo")
-
 # unflex
 
 An even simpler responsive CSS grid.
