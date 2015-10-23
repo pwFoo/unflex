@@ -1,1 +1,1 @@
-@media (min-width:640px){.row{display:flex;flex-flow:row wrap}.col{flex-grow:1}}
+@media (min-width:640px){.row{display:flex;flex-flow:row wrap}.col{flex-grow:1;flex-basis:0}}

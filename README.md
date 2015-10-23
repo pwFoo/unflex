@@ -6,7 +6,7 @@ An even simpler, responsive CSS grid.
 ## What's this?
 
 __unflex__ is a tiny, responsive, **flex**-based CSS grid system.
-The entire `unflex.css` file is 80 bytes minified.
+The entire `unflex.css` file is 93 bytes minified.
 
 
 ```css
@@ -46,11 +46,27 @@ simple grids.
 
 ```html
 <div class="row">
-    <div class="col">☯</div>
-    <div class="col">☯</div>
-    <div class="col">☯</div>
-    …
-    <div class="col">☯</div>
+  <div class="col">☯</div>
+  <div class="col">☯</div>
+  <div class="col">☯</div>
+  …
+  <div class="col">☯</div>
+</div>
+```
+
+To give a column a specific width, e.g. 33% of the viewport, you need
+add the property `flex-grow: 0` to it:
+
+```css
+.-fixed-width {
+  flex-grow: 0;
+}
+````
+
+```html
+<div class="row">
+  <div class="col -fixed-width" style="width: 33%;">☯</div>
+  <div class="col">☯</div>
 </div>
 ```
 
