@@ -1,6 +1,6 @@
 # unflex
 
-An even simpler responsive CSS grid.
+An even simpler, responsive CSS grid.
 
 
 ## What's this?
@@ -55,6 +55,8 @@ simple grids.
 ```
 
 # License
+
+![zlib License](https://img.shields.io/badge/license-zlib-blue.svg)
 
 Copyright (c) 2015 [Eroica](https://github.com/Eroica)
 
