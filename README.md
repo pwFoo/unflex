@@ -60,6 +60,7 @@ add the property `flex-grow: 0` to it:
 ```css
 .-fixed-width {
   flex-grow: 0;
+  flex-basis: auto;
 }
 ````
 
