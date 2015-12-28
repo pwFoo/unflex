@@ -6,15 +6,14 @@ An even simpler, responsive CSS grid.
 ## What's this?
 
 __unflex__ is a tiny, responsive, **flex**-based CSS grid system.
-The entire `unflex.css` file is 93 bytes minified.
+The entire `unflex.css` file is 81 bytes minified.
 
 
 ```css
-@media (min-width: 640px) {
-  .row { display: flex; flex-flow: row wrap;}
-  .col { flex-grow: 1 }
-}
-```
+@media (min-width: 540px) {
+	.row { display: flex; flex-flow: row wrap; }
+	.col { flex: 1 1 0% }
+}```
 
 ## Why this?
 
@@ -54,8 +53,21 @@ simple grids.
 </div>
 ```
 
-To give a column a specific width, e.g. 33% of the viewport, you need
-add the property `flex-grow: 0` to it:
+With `flex-grow` set to 1, each `.col` will distribute their widths
+equally among themselves. However, this is only possible by also setting
+`flex-basis` to a zero value, e.g. `0%` or `0px`.
+
+> Defines the flex-basis of the flex item. Any value valid for width and
+> height properties are accepted. A preferred size of 0 must have a unit
+> to avoid being interpreted as a flexibility. Defaults to auto when
+> omitted.
+(https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+
+To give a column a specific width, e.g. 33% of the viewport, you need to
+reset `flex-grow` back to 0, and then either:
+
+*	Set `flex-basis` to the width you want,
+*	or set `flex-basis` to `auto` and then add a `width` property.
 
 ```css
 .-fixed-width {
