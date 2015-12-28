@@ -11,9 +11,10 @@ The entire `unflex.css` file is 81 bytes minified.
 
 ```css
 @media (min-width: 540px) {
-  .row { display: flex; flex-flow: row wrap; }
+  .row { display: flex; flex-flow: row wrap }
   .col { flex: 1 1 0% }
-}```
+}
+```
 
 ## Why this?
 
@@ -56,6 +57,8 @@ simple grids.
 With `flex-grow` set to 1, each `.col` will distribute their widths
 equally among themselves. However, this is only possible by also setting
 `flex-basis` to a zero value, e.g. `0%` or `0px`.
+
+In this case, the unit after 0 is intendend:
 
 > Defines the flex-basis of the flex item. Any value valid for width and
 > height properties are accepted. A preferred size of 0 must have a unit
