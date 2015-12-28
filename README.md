@@ -30,7 +30,7 @@ I noticed while using __ungrid__ for my work.
 This, and the fact that all major browser now support `display: flex`,
 is the reason why I created __unflex__. Even though `display: flex` has
 many features that make the notion of "rows" and "columns" obsolete,
-I think a table-based layout is a simple enough approach for small
+I think a table-based layout is still a simple enough approach for small
 projects.
 
 
@@ -66,8 +66,8 @@ In this case, the unit after 0 is intendend:
 > omitted.
 (https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
 
-To give a column a specific width, e.g. 33% of the viewport, you need to
-reset `flex-grow` back to 0, and then either:
+To give a column a specific width, e.g. 33% of the parent container, you
+need to reset `flex-grow` back to 0, and then either:
 
 *	Set `flex-basis` to the width you want,
 *	or set `flex-basis` to `auto` and then add a `width` property.
