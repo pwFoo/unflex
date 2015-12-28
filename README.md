@@ -11,8 +11,8 @@ The entire `unflex.css` file is 81 bytes minified.
 
 ```css
 @media (min-width: 540px) {
-	.row { display: flex; flex-flow: row wrap; }
-	.col { flex: 1 1 0% }
+  .row { display: flex; flex-flow: row wrap; }
+  .col { flex: 1 1 0% }
 }```
 
 ## Why this?
