@@ -6,13 +6,13 @@ An even simpler, responsive CSS grid.
 ## What's this?
 
 __unflex__ is a tiny, responsive, **flex**-based CSS grid system.
-The entire `unflex.css` file is 81 bytes minified.
+The entire `unflex.css` file is 76 bytes minified.
 
 
 ```css
 @media (min-width: 540px) {
   .row { display: flex; flex-flow: row wrap }
-  .col { flex: 1 1 0% }
+  .col { flex: 1 }
 }
 ```
 
@@ -55,16 +55,7 @@ simple grids.
 ```
 
 With `flex-grow` set to 1, each `.col` will distribute their widths
-equally among themselves. However, this is only possible by also setting
-`flex-basis` to a zero value, e.g. `0%` or `0px`.
-
-In this case, the unit after 0 is intendend:
-
-> Defines the flex-basis of the flex item. Any value valid for width and
-> height properties are accepted. A preferred size of 0 must have a unit
-> to avoid being interpreted as a flexibility. Defaults to auto when
-> omitted.
-(https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+equally among themselves.
 
 To give a column a specific width, e.g. 33% of the parent container, you
 need to reset `flex-grow` back to 0, and then either:
@@ -89,6 +80,10 @@ need to reset `flex-grow` back to 0, and then either:
 # License
 
 ![zlib License](https://img.shields.io/badge/license-zlib-blue.svg)
+
+__Note: This is just a small code snippet, of course I do not claim to be the
+"inventor" of this idea. Still, if you find it useful, I hope you will have
+a look at my other projects as well!__
 
 Copyright (c) 2015 [Eroica](https://github.com/Eroica)
 
